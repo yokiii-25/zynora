@@ -256,26 +256,47 @@ a {
   }
 }
 
-@media (max-width: 520px) {
-  .navbar {
-    width: min(100% - 24px, 1180px);
+@media (max-width: 850px) {
+  .navLinks {
+    display: none;
   }
 
-  .navButton {
-    padding: 10px 14px;
-    font-size: 0.8rem;
+  .systemStatus {
+    display: none;
   }
 
   .hero {
-    width: min(100% - 24px, 1180px);
+    grid-template-columns: 1fr;
+    padding: 70px 0;
   }
 
-  .heroActions {
-    align-items: stretch;
+  .heroVisual {
+    padding: 0;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    align-items: flex-start;
     flex-direction: column;
   }
+}
+.systemStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #4f6f5b;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
 
-  .housePreview {
-    font-size: 8rem;
-  }
+.systemStatus::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4caf73;
+  content: "";
+  box-shadow: 0 0 0 4px rgba(76, 175, 115, 0.12);
 }

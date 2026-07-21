@@ -1,4 +1,26 @@
+import { useEffect, useState } from "react";
+import { checkBackendHealth } from "../services/api";
+
 function Navbar() {
+  const [backendStatus, setBackendStatus] = useState("Checking...");
+
+  useEffect(() => {
+    async function verifyBackend() {
+      try {
+        const data = await checkBackendHealth();
+
+        if (data.status === "healthy") {
+          setBackendStatus("AI System Online");
+        }
+      } catch (error) {
+        console.error(error);
+        setBackendStatus("Backend Offline");
+      }
+    }
+
+    verifyBackend();
+  }, []);
+
   return (
     <nav className="navbar">
       <div className="brand">ZYNORA</div>
@@ -9,7 +31,10 @@ function Navbar() {
         <a href="#about">About</a>
       </div>
 
-      <button className="navButton">Start Designing</button>
+      <div className="navbarActions">
+        <span className="systemStatus">{backendStatus}</span>
+        <button className="navButton">Start Designing</button>
+      </div>
     </nav>
   );
 }
