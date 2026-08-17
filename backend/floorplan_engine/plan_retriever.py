@@ -230,7 +230,7 @@ def retrieve_best_plan(
         candidate_plans = get_valid_plans(
             plans
         )
-        match_type = "closest"
+        match_type = "structural_mismatch"
 
     if not candidate_plans:
         raise ValueError(
@@ -346,5 +346,8 @@ def retrieve_best_plan(
         "rotation": rotation,
         "match_score": match_score,
     }
+    selected_plan["requires_structural_generation"] = (
+        match_type == "structural_mismatch"
+    )
 
     return selected_plan

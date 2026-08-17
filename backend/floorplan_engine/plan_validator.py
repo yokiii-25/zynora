@@ -184,3 +184,49 @@ def validate_plan(
                     )
 
     return errors
+
+def validate_requirements(
+    plan: dict[str, Any],
+    requested_bedrooms: int,
+    requested_bathrooms: int,
+    requested_floors: int,
+) -> list[str]:
+    errors: list[str] = []
+
+    try:
+        actual_bedrooms = int(
+            plan.get("bedrooms", 0)
+        )
+        actual_bathrooms = int(
+            plan.get("bathrooms", 0)
+        )
+        actual_floors = int(
+            plan.get("floors", 1)
+        )
+    except (TypeError, ValueError):
+        return [
+            "The plan contains invalid requirement metadata."
+        ]
+
+    if actual_bedrooms != requested_bedrooms:
+        errors.append(
+            "Bedroom requirement mismatch: "
+            f"requested {requested_bedrooms}, "
+            f"plan contains {actual_bedrooms}."
+        )
+
+    if actual_bathrooms != requested_bathrooms:
+        errors.append(
+            "Bathroom requirement mismatch: "
+            f"requested {requested_bathrooms}, "
+            f"plan contains {actual_bathrooms}."
+        )
+
+    if actual_floors != requested_floors:
+        errors.append(
+            "Floor requirement mismatch: "
+            f"requested {requested_floors}, "
+            f"plan contains {actual_floors}."
+        )
+
+    return errors

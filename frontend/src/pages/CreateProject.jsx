@@ -201,38 +201,98 @@ function CreateProject() {
     );
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     if (loading || currentStep !== totalSteps) {
       return;
     }
 
+    setLoading(true);
+
     try {
-      localStorage.setItem(
-        "zynoraProjectData",
-        JSON.stringify(project)
+      const projectPayload = {
+        name: project.name,
+        location: project.location || null,
+        property_type: project.propertyType || null,
+        floors: project.floors ? Number(project.floors) : null,
+        plot_width: project.landWidth
+          ? Number(project.landWidth)
+          : null,
+        plot_length: project.landLength
+          ? Number(project.landLength)
+          : null,
+        bedrooms: project.bedrooms
+          ? Number(project.bedrooms)
+          : null,
+        bathrooms: project.bathrooms
+          ? Number(project.bathrooms)
+          : null,
+        budget: project.budget
+          ? Number(project.budget)
+          : null,
+        currency: project.currency || "INR",
+        style: project.style || null,
+        status: "draft",
+        design_notes: project.designNotes || null,
+      };
+
+      const response = await fetch(
+        "http://127.0.0.1:8000/projects",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(projectPayload),
+        }
       );
 
-      // The site planner is the geometry gate between requirements and plan
-      // generation. It lets the user confirm footprint, rotation/placement,
-      // and setbacks before the backend retrieves and validates a plan.
+      if (!response.ok) {
+        const errorText = await response.text();
+
+        throw new Error(
+          `Unable to save project to database: ${errorText}`
+        );
+      }
+
+      const savedProject = await response.json();
+
+      localStorage.setItem(
+        "zynoraProjectData",
+        JSON.stringify({
+          ...project,
+          databaseProjectId: savedProject.id,
+        })
+      );
+
+      localStorage.setItem(
+        "zynoraProjectId",
+        String(savedProject.id)
+      );
+
       localStorage.setItem(
         "zynoraDesignResult",
         JSON.stringify({
           source: "project_requirements",
+          projectId: savedProject.id,
           design: {},
         })
       );
 
       navigate("/site-planner");
     } catch (error) {
-      console.error("Unable to save project details:", error);
+      console.error(
+        "Unable to save project details:",
+        error
+      );
 
       alert(
         error.message ||
           "Unable to continue to site planning. Please try again."
       );
+    } finally {
+      setLoading(false);
     }
   }
 

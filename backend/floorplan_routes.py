@@ -14,6 +14,7 @@ from floorplan_engine.plan_retriever import (
 )
 from floorplan_engine.plan_validator import (
     validate_plan,
+    validate_requirements,
 )
 from floorplan_engine.furniture_generator import (
     generate_furniture,
@@ -140,13 +141,30 @@ def generate_floor_plan(
 
         print("STEP 4: Validating plan")
 
-        validation_errors = validate_plan(
+        geometry_errors = validate_plan(
             adapted_plan
         )
 
+        requirement_errors = validate_requirements(
+            plan=adapted_plan,
+            requested_bedrooms=bedrooms,
+            requested_bathrooms=bathrooms,
+            requested_floors=floors,
+        )
+
+        validation_errors = (
+            geometry_errors
+            + requirement_errors
+        )
+
         print(
-            "Validation errors:",
-            validation_errors,
+            "Geometry validation errors:",
+            geometry_errors,
+        )
+
+        print(
+            "Requirement validation errors:",
+            requirement_errors,
         )
 
         if validation_errors:

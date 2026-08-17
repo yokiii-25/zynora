@@ -18,6 +18,7 @@ from routes.floorplan_geometry import (
 from routes.blender_render import (
     router as blender_render_router,
 )
+from routes.projects import router as projects_router
 
 
 app = FastAPI(
@@ -49,6 +50,7 @@ app.include_router(room_classification_router)
 app.include_router(realistic_render_router)
 app.include_router(floorplan_geometry_router)
 app.include_router(blender_render_router)
+app.include_router(projects_router)
 
 
 @app.get("/")
