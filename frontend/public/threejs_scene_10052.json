@@ -1,0 +1,820 @@
+{
+  "metadata": {
+    "name": "CubiCasa House 10052",
+    "source": "Y:\\YPS-Labs\\zynora-ai\\datasets\\raw\\cubicasa5k\\cubicasa5k\\colorful\\10052\\model.svg",
+    "version": "0.2.0"
+  },
+  "scene": {
+    "floor": {},
+    "walls": {
+      "exterior": [
+        {
+          "id": "wall_segment_0001",
+          "type": "wall",
+          "position": {
+            "x": 14.934,
+            "y": 1.5,
+            "z": 5.312
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.15,
+            "height": 3.0,
+            "depth": 6.479
+          },
+          "metadata": {
+            "wall_class": "Wall External",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0002",
+          "type": "wall",
+          "position": {
+            "x": 2.32,
+            "y": 1.5,
+            "z": 5.312
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 6.479
+          },
+          "metadata": {
+            "wall_class": "Wall External",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0004",
+          "type": "wall",
+          "position": {
+            "x": 8.63,
+            "y": 1.5,
+            "z": 8.481
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 12.759,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall External",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0005",
+          "type": "wall",
+          "position": {
+            "x": 8.63,
+            "y": 1.5,
+            "z": 2.143
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 12.759,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall External",
+            "orientation": "horizontal"
+          }
+        }
+      ],
+      "interior": [
+        {
+          "id": "wall_segment_0003",
+          "type": "wall",
+          "position": {
+            "x": 1.37,
+            "y": 1.5,
+            "z": 8.481
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 1.76,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall ",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0006",
+          "type": "wall",
+          "position": {
+            "x": 1.44,
+            "y": 1.5,
+            "z": 2.143
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 1.9,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall ",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0007",
+          "type": "wall",
+          "position": {
+            "x": 7.734,
+            "y": 1.5,
+            "z": 3.211
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 2.277
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0008",
+          "type": "wall",
+          "position": {
+            "x": 9.2,
+            "y": 1.5,
+            "z": 5.393
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 3.071,
+            "height": 3.0,
+            "depth": 2.228
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0009",
+          "type": "wall",
+          "position": {
+            "x": 8.72,
+            "y": 1.5,
+            "z": 5.039
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.598,
+            "height": 3.0,
+            "depth": 0.492
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0010",
+          "type": "wall",
+          "position": {
+            "x": 10.665,
+            "y": 1.5,
+            "z": 7.493
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 2.115
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0011",
+          "type": "wall",
+          "position": {
+            "x": 10.669,
+            "y": 1.5,
+            "z": 3.227
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 2.308
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0012",
+          "type": "wall",
+          "position": {
+            "x": 11.402,
+            "y": 1.5,
+            "z": 4.311
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 1.605,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0013",
+          "type": "wall",
+          "position": {
+            "x": 12.134,
+            "y": 1.5,
+            "z": 3.227
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 2.308
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0014",
+          "type": "wall",
+          "position": {
+            "x": 10.931,
+            "y": 1.5,
+            "z": 5.225
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 1.389,
+            "height": 3.0,
+            "depth": 1.853
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0015",
+          "type": "wall",
+          "position": {
+            "x": 7.421,
+            "y": 1.5,
+            "z": 6.041
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.774,
+            "height": 3.0,
+            "depth": 0.14
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0016",
+          "type": "wall",
+          "position": {
+            "x": 7.738,
+            "y": 1.5,
+            "z": 7.261
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.14,
+            "height": 3.0,
+            "depth": 2.58
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0017",
+          "type": "wall",
+          "position": {
+            "x": 7.52,
+            "y": 1.5,
+            "z": 8.186
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.296,
+            "height": 3.0,
+            "depth": 0.73
+          },
+          "metadata": {
+            "wall_class": "Wall",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0018",
+          "type": "wall",
+          "position": {
+            "x": 0.732,
+            "y": 1.5,
+            "z": 0.241
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.106,
+            "height": 3.0,
+            "depth": 0.154
+          },
+          "metadata": {
+            "wall_class": "FixedFurniture WallCabinet",
+            "orientation": "vertical"
+          }
+        },
+        {
+          "id": "wall_segment_0019",
+          "type": "wall",
+          "position": {
+            "x": 1.338,
+            "y": 1.5,
+            "z": 0.163
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 2.677,
+            "height": 3.0,
+            "depth": 0.327
+          },
+          "metadata": {
+            "wall_class": "FixedFurniture WallCabinet",
+            "orientation": "horizontal"
+          }
+        },
+        {
+          "id": "wall_segment_0020",
+          "type": "wall",
+          "position": {
+            "x": 1.413,
+            "y": 1.5,
+            "z": 0.245
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "size": {
+            "width": 0.106,
+            "height": 3.0,
+            "depth": 0.154
+          },
+          "metadata": {
+            "wall_class": "FixedFurniture WallCabinet",
+            "orientation": "vertical"
+          }
+        }
+      ]
+    },
+    "doors": [
+      {
+        "id": "door_0001",
+        "type": "door",
+        "position": {
+          "x": 2.3203,
+          "y": 1.05,
+          "z": 5.544
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.8292,
+          "height": 2.1,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Door Swing Opposite",
+          "source_id": "Door",
+          "wall_id": "wall_segment_0002",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "door_0002",
+        "type": "door",
+        "position": {
+          "x": 10.1064,
+          "y": 1.05,
+          "z": 8.481
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -0.0,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.847,
+          "height": 2.1,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Door Swing Beside",
+          "source_id": "Door",
+          "wall_id": "wall_segment_0004",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "door_0003",
+        "type": "door",
+        "position": {
+          "x": 8.7198,
+          "y": 1.05,
+          "z": 5.0392
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -0.634715,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.6397,
+          "height": 2.1,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Door Swing Beside",
+          "source_id": "Door",
+          "wall_id": "wall_segment_0008",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "door_0004",
+        "type": "door",
+        "position": {
+          "x": 10.6651,
+          "y": 1.05,
+          "z": 6.9292
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.7299,
+          "height": 2.1,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Door Swing Beside",
+          "source_id": "Door",
+          "wall_id": "wall_segment_0010",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "door_0005",
+        "type": "door",
+        "position": {
+          "x": 10.6691,
+          "y": 1.05,
+          "z": 3.5358
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.6387,
+          "height": 2.1,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Door Swing Beside",
+          "source_id": "Door",
+          "wall_id": "wall_segment_0011",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "door_0006",
+        "type": "door",
+        "position": {
+          "x": 0.0,
+          "y": 1.05,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.9,
+          "height": 2.1,
+          "depth": 0.15
+        },
+        "metadata": {
+          "class": "Doors",
+          "source_id": null,
+          "wall_id": null,
+          "status": "unmatched",
+          "distance": 25.35
+        }
+      }
+    ],
+    "windows": [
+      {
+        "id": "window_0001",
+        "type": "window",
+        "position": {
+          "x": 14.9344,
+          "y": 1.5,
+          "z": 4.2911
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 1.9236,
+          "height": 1.2,
+          "depth": 0.15
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0001",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0002",
+        "type": "window",
+        "position": {
+          "x": 14.9344,
+          "y": 1.5,
+          "z": 6.9271
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 1.9337,
+          "height": 1.2,
+          "depth": 0.15
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0001",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0003",
+        "type": "window",
+        "position": {
+          "x": 2.3203,
+          "y": 1.5,
+          "z": 8.1488
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.5197,
+          "height": 1.2,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0002",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0004",
+        "type": "window",
+        "position": {
+          "x": 2.3203,
+          "y": 1.5,
+          "z": 6.9276
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 1.7051,
+          "height": 1.2,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0002",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0005",
+        "type": "window",
+        "position": {
+          "x": 2.3203,
+          "y": 1.5,
+          "z": 3.9605
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 2.1793,
+          "height": 1.2,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0002",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0006",
+        "type": "window",
+        "position": {
+          "x": 2.3203,
+          "y": 1.5,
+          "z": 2.503
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 1.570796,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.5353,
+          "height": 1.2,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0002",
+          "status": "linked",
+          "distance": 0.0
+        }
+      },
+      {
+        "id": "window_0007",
+        "type": "window",
+        "position": {
+          "x": 11.0642,
+          "y": 1.5,
+          "z": 4.3106
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": -0.0,
+          "z": 0.0
+        },
+        "size": {
+          "width": 0.5,
+          "height": 1.2,
+          "depth": 0.14
+        },
+        "metadata": {
+          "class": "Window Regular",
+          "source_id": "Window",
+          "wall_id": "wall_segment_0012",
+          "status": "linked",
+          "distance": 0.0
+        }
+      }
+    ],
+    "roof": [],
+    "furniture": []
+  }
+}

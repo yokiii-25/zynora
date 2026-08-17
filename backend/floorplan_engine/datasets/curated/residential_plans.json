@@ -1,0 +1,482 @@
+[
+  {
+    "id": "curated-2bhk-compact-001",
+    "source": "Zynora Curated",
+    "name": "Compact Two Bedroom",
+    "width": 30,
+    "height": 25,
+    "aspect_ratio": 1.2,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "floors": 1,
+    "room_count": 6,
+    "rooms": [
+      {
+        "id": "living-1",
+        "type": "living",
+        "name": "Living Room",
+        "x": 0,
+        "y": 0,
+        "width": 18,
+        "height": 10,
+        "area": 180
+      },
+      {
+        "id": "kitchen-2",
+        "type": "kitchen",
+        "name": "Kitchen",
+        "x": 18,
+        "y": 0,
+        "width": 12,
+        "height": 10,
+        "area": 120
+      },
+      {
+        "id": "bedroom-3",
+        "type": "bedroom",
+        "name": "Master Bedroom",
+        "x": 0,
+        "y": 10,
+        "width": 13,
+        "height": 15,
+        "area": 195
+      },
+      {
+        "id": "bedroom-4",
+        "type": "bedroom",
+        "name": "Bedroom 2",
+        "x": 13,
+        "y": 10,
+        "width": 10,
+        "height": 11,
+        "area": 110
+      },
+      {
+        "id": "bathroom-5",
+        "type": "bathroom",
+        "name": "Bathroom",
+        "x": 23,
+        "y": 10,
+        "width": 7,
+        "height": 7,
+        "area": 49
+      },
+      {
+        "id": "passage-6",
+        "type": "passage",
+        "name": "Passage",
+        "x": 13,
+        "y": 21,
+        "width": 17,
+        "height": 4,
+        "area": 68
+      }
+    ],
+    "boundary": [
+      [0, 0],
+      [30, 0],
+      [30, 25],
+      [0, 25]
+    ],
+    "doors": [
+      {
+        "id": "door-1",
+        "type": "main",
+        "x": 7,
+        "y": 0,
+        "width": 4,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-2",
+        "type": "internal",
+        "x": 6,
+        "y": 9.7,
+        "width": 3,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-3",
+        "type": "internal",
+        "x": 17,
+        "y": 9.7,
+        "width": 3,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-4",
+        "type": "internal",
+        "x": 22.7,
+        "y": 12,
+        "width": 0.3,
+        "height": 3,
+        "orientation": "vertical"
+      }
+    ],
+    "windows": [
+      {
+        "id": "window-1",
+        "x": 2,
+        "y": 0,
+        "width": 4,
+        "height": 0.2,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "window-2",
+        "x": 20,
+        "y": 0,
+        "width": 4,
+        "height": 0.2,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "window-3",
+        "x": 0,
+        "y": 14,
+        "width": 0.2,
+        "height": 4,
+        "orientation": "vertical"
+      }
+    ],
+    "furniture": []
+  },
+  {
+    "id": "curated-3bhk-standard-001",
+    "source": "Zynora Curated",
+    "name": "Standard Three Bedroom",
+    "width": 40,
+    "height": 35,
+    "aspect_ratio": 1.1429,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "floors": 1,
+    "room_count": 9,
+    "rooms": [
+      {
+        "id": "living-1",
+        "type": "living",
+        "name": "Living Room",
+        "x": 0,
+        "y": 0,
+        "width": 22,
+        "height": 13,
+        "area": 286
+      },
+      {
+        "id": "dining-2",
+        "type": "dining",
+        "name": "Dining Room",
+        "x": 22,
+        "y": 0,
+        "width": 10,
+        "height": 13,
+        "area": 130
+      },
+      {
+        "id": "kitchen-3",
+        "type": "kitchen",
+        "name": "Kitchen",
+        "x": 32,
+        "y": 0,
+        "width": 8,
+        "height": 13,
+        "area": 104
+      },
+      {
+        "id": "bedroom-4",
+        "type": "bedroom",
+        "name": "Master Bedroom",
+        "x": 0,
+        "y": 13,
+        "width": 14,
+        "height": 16,
+        "area": 224
+      },
+      {
+        "id": "bathroom-5",
+        "type": "bathroom",
+        "name": "Master Bathroom",
+        "x": 0,
+        "y": 29,
+        "width": 8,
+        "height": 6,
+        "area": 48
+      },
+      {
+        "id": "bedroom-6",
+        "type": "bedroom",
+        "name": "Bedroom 2",
+        "x": 14,
+        "y": 13,
+        "width": 12,
+        "height": 13,
+        "area": 156
+      },
+      {
+        "id": "bedroom-7",
+        "type": "bedroom",
+        "name": "Bedroom 3",
+        "x": 26,
+        "y": 13,
+        "width": 14,
+        "height": 13,
+        "area": 182
+      },
+      {
+        "id": "bathroom-8",
+        "type": "bathroom",
+        "name": "Common Bathroom",
+        "x": 26,
+        "y": 26,
+        "width": 7,
+        "height": 6,
+        "area": 42
+      },
+      {
+        "id": "passage-9",
+        "type": "passage",
+        "name": "Passage",
+        "x": 8,
+        "y": 29,
+        "width": 18,
+        "height": 6,
+        "area": 108
+      }
+    ],
+    "boundary": [
+      [0, 0],
+      [40, 0],
+      [40, 35],
+      [0, 35]
+    ],
+    "doors": [
+      {
+        "id": "door-1",
+        "type": "main",
+        "x": 8,
+        "y": 0,
+        "width": 4,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-2",
+        "type": "internal",
+        "x": 5,
+        "y": 12.7,
+        "width": 3,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-3",
+        "type": "internal",
+        "x": 18,
+        "y": 12.7,
+        "width": 3,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-4",
+        "type": "internal",
+        "x": 30,
+        "y": 12.7,
+        "width": 3,
+        "height": 0.3,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "door-5",
+        "type": "internal",
+        "x": 25.7,
+        "y": 27,
+        "width": 0.3,
+        "height": 3,
+        "orientation": "vertical"
+      }
+    ],
+    "windows": [
+      {
+        "id": "window-1",
+        "x": 2,
+        "y": 0,
+        "width": 5,
+        "height": 0.2,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "window-2",
+        "x": 34,
+        "y": 0,
+        "width": 4,
+        "height": 0.2,
+        "orientation": "horizontal"
+      },
+      {
+        "id": "window-3",
+        "x": 0,
+        "y": 18,
+        "width": 0.2,
+        "height": 5,
+        "orientation": "vertical"
+      },
+      {
+        "id": "window-4",
+        "x": 39.8,
+        "y": 17,
+        "width": 0.2,
+        "height": 5,
+        "orientation": "vertical"
+      }
+    ],
+    "furniture": []
+  },
+  {
+    "id": "curated-4bhk-large-001",
+    "source": "Zynora Curated",
+    "name": "Large Four Bedroom",
+    "width": 50,
+    "height": 40,
+    "aspect_ratio": 1.25,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "floors": 1,
+    "room_count": 12,
+    "rooms": [
+      {
+        "id": "living-1",
+        "type": "living",
+        "name": "Living Room",
+        "x": 0,
+        "y": 0,
+        "width": 25,
+        "height": 14,
+        "area": 350
+      },
+      {
+        "id": "dining-2",
+        "type": "dining",
+        "name": "Dining Room",
+        "x": 25,
+        "y": 0,
+        "width": 12,
+        "height": 14,
+        "area": 168
+      },
+      {
+        "id": "kitchen-3",
+        "type": "kitchen",
+        "name": "Kitchen",
+        "x": 37,
+        "y": 0,
+        "width": 13,
+        "height": 14,
+        "area": 182
+      },
+      {
+        "id": "bedroom-4",
+        "type": "bedroom",
+        "name": "Master Bedroom",
+        "x": 0,
+        "y": 14,
+        "width": 15,
+        "height": 18,
+        "area": 270
+      },
+      {
+        "id": "bathroom-5",
+        "type": "bathroom",
+        "name": "Master Bathroom",
+        "x": 0,
+        "y": 32,
+        "width": 8,
+        "height": 8,
+        "area": 64
+      },
+      {
+        "id": "bedroom-6",
+        "type": "bedroom",
+        "name": "Bedroom 2",
+        "x": 15,
+        "y": 14,
+        "width": 12,
+        "height": 14,
+        "area": 168
+      },
+      {
+        "id": "bedroom-7",
+        "type": "bedroom",
+        "name": "Bedroom 3",
+        "x": 27,
+        "y": 14,
+        "width": 12,
+        "height": 14,
+        "area": 168
+      },
+      {
+        "id": "bedroom-8",
+        "type": "bedroom",
+        "name": "Bedroom 4",
+        "x": 39,
+        "y": 14,
+        "width": 11,
+        "height": 14,
+        "area": 154
+      },
+      {
+        "id": "bathroom-9",
+        "type": "bathroom",
+        "name": "Bathroom 2",
+        "x": 15,
+        "y": 28,
+        "width": 7,
+        "height": 6,
+        "area": 42
+      },
+      {
+        "id": "bathroom-10",
+        "type": "bathroom",
+        "name": "Bathroom 3",
+        "x": 39,
+        "y": 28,
+        "width": 7,
+        "height": 6,
+        "area": 42
+      },
+      {
+        "id": "passage-11",
+        "type": "passage",
+        "name": "Central Passage",
+        "x": 22,
+        "y": 28,
+        "width": 17,
+        "height": 6,
+        "area": 102
+      },
+      {
+        "id": "utility-12",
+        "type": "utility",
+        "name": "Utility Room",
+        "x": 8,
+        "y": 34,
+        "width": 42,
+        "height": 6,
+        "area": 252
+      }
+    ],
+    "boundary": [
+      [0, 0],
+      [50, 0],
+      [50, 40],
+      [0, 40]
+    ],
+    "doors": [],
+    "windows": [],
+    "furniture": []
+  }
+]

@@ -1,0 +1,200 @@
+.threeDDesignPage,
+.threeDStatusPage {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(37, 99, 235, 0.16),
+      transparent 35%
+    ),
+    #07111f;
+  color: #ffffff;
+}
+
+.threeDDesignPage {
+  padding: 32px 20px;
+}
+
+.threeDDesignContainer {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+}
+
+.threeDDesignHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.threeDDesignHeader h1 {
+  margin: 8px 0 0;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.1;
+}
+
+.threeDStatusEyebrow {
+  margin: 0;
+  color: #34d399;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.threeDDesignDescription {
+  margin-top: 14px;
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.threeDHeaderActions,
+.threeDStatusActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.threeDPrimaryButton,
+.threeDSecondaryButton {
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.threeDPrimaryButton {
+  border: none;
+  background: #34d399;
+  color: #052e2b;
+}
+
+.threeDSecondaryButton {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+}
+
+.threeDPrimaryButton:hover,
+.threeDSecondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.threeDSecondaryButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.threeDProjectSummary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.threeDProjectSummary div {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.threeDProjectSummary span {
+  display: block;
+  margin-bottom: 7px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.threeDProjectSummary strong {
+  font-size: 18px;
+}
+
+.threeDStatusPage {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.threeDStatusCard {
+  width: min(600px, 100%);
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+}
+
+.threeDStatusCard h1 {
+  margin: 14px 0;
+  font-size: clamp(30px, 5vw, 44px);
+}
+
+.threeDStatusCard p {
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.threeDStatusActions {
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.threeDErrorText {
+  color: #fb7185;
+}
+
+.threeDLoader {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  border: 5px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #34d399;
+  border-radius: 50%;
+  animation: threeDSpin 0.8s linear infinite;
+}
+
+@keyframes threeDSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .threeDDesignHeader {
+    flex-direction: column;
+  }
+
+  .threeDProjectSummary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .threeDDesignPage {
+    padding: 22px 14px;
+  }
+
+  .threeDProjectSummary {
+    grid-template-columns: 1fr;
+  }
+
+  .threeDHeaderActions,
+  .threeDStatusActions {
+    width: 100%;
+  }
+
+  .threeDPrimaryButton,
+  .threeDSecondaryButton {
+    width: 100%;
+  }
+
+  .threeDStatusCard {
+    padding: 30px 20px;
+  }
+}

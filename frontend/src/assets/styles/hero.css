@@ -1,0 +1,253 @@
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 8%;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.15), transparent 30%),
+    linear-gradient(135deg, #f8fafc 0%, #eef4ff 100%);
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.heroLeft {
+  max-width: 650px;
+}
+
+.heroBadge {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 9px 16px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.heroLeft h1 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.heroLeft > p {
+  max-width: 620px;
+  margin: 26px 0 0;
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  min-height: 52px;
+  padding: 0 24px;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.primaryBtn {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.secondaryBtn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  transform: translateY(-2px);
+}
+
+.primaryBtn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.32);
+}
+
+.secondaryBtn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.heroStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  margin-top: 42px;
+}
+
+.heroStats div {
+  position: relative;
+  padding-right: 34px;
+}
+
+.heroStats div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 1px;
+  height: 42px;
+  background: #cbd5e1;
+}
+
+.heroStats h3 {
+  margin: 0 0 4px;
+  color: #2563eb;
+  font-size: 1.55rem;
+}
+
+.heroStats p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+}
+
+.heroImageCard {
+  position: relative;
+  width: min(100%, 440px);
+  padding: 44px 34px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.14);
+  text-align: center;
+  backdrop-filter: blur(16px);
+}
+
+.heroImageCard::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: -1;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.14),
+    rgba(16, 185, 129, 0.12)
+  );
+}
+
+.housePlaceholder {
+  display: grid;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 26px;
+  place-items: center;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #dbeafe, #dcfce7);
+  font-size: 6rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.heroImageCard h3 {
+  margin: 0 0 10px;
+  color: #111827;
+  font-size: 1.45rem;
+}
+
+.heroImageCard p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .heroSection {
+    padding: 72px 6%;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .heroLeft {
+    max-width: none;
+    text-align: center;
+  }
+
+  .heroLeft > p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .heroButtons,
+  .heroStats {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 56px 20px;
+  }
+
+  .heroLeft h1 {
+    font-size: 3rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .heroStats {
+    gap: 20px;
+  }
+
+  .heroStats div {
+    padding-right: 0;
+  }
+
+  .heroStats div::after {
+    display: none;
+  }
+
+  .heroImageCard {
+    padding: 32px 22px;
+  }
+
+  .housePlaceholder {
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+  }
+}

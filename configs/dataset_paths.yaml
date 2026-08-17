@@ -1,0 +1,12 @@
+project_root: "Y:/YPS-Labs/zynora-ai"
+
+dataset:
+  raw_dir: "datasets/raw"
+  train_dir: "datasets/train"
+  val_dir: "datasets/val"
+  test_dir: "datasets/test"
+  processed_dir: "datasets/processed"
+
+outputs:
+  inspection_dir: "outputs/inspection"
+  parsed_dir: "outputs/parsed"

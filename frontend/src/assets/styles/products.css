@@ -1,0 +1,146 @@
+.productsSection {
+  padding: 100px 8%;
+  background: #ffffff;
+}
+
+.productsSection .sectionHeader {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.sectionEyebrow {
+  margin: 0 0 12px;
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.productsSection .sectionHeader h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.productsSection .sectionHeader > p:last-child {
+  margin: 18px auto 0;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.productGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.productCard {
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.productCard::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+}
+
+.productIcon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 26px;
+  place-items: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #dbeafe, #dcfce7);
+  font-size: 2rem;
+}
+
+.productCard h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 14px;
+  color: #111827;
+  font-size: 1.35rem;
+}
+
+.productCard > p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.productLink {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2563eb;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.productLink:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 900px) {
+  .productsSection {
+    padding: 80px 6%;
+  }
+
+  .productGrid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .productCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .productsSection {
+    padding: 64px 20px;
+  }
+
+  .productCard {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,117 @@
+.howItWorksSection {
+  padding: 100px 8%;
+  background: #ffffff;
+}
+
+.howItWorksSection .sectionHeader {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.howItWorksSection .sectionHeader h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.howItWorksSection .sectionHeader p:last-child {
+  margin: 18px auto 0;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.stepsContainer {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.stepsContainer::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, #2563eb, #10b981);
+  z-index: 0;
+}
+
+.stepCard {
+  position: relative;
+  z-index: 1;
+  min-height: 260px;
+  padding: 26px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 22px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.12);
+}
+
+.stepNumber {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  place-items: center;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #10b981);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.24);
+}
+
+.stepCard h3 {
+  margin: 0 0 12px;
+  color: #111827;
+  font-size: 1.25rem;
+}
+
+.stepCard p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1000px) {
+  .stepsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stepsContainer::before {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .howItWorksSection {
+    padding: 64px 20px;
+  }
+
+  .stepsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .stepCard {
+    min-height: auto;
+  }
+}

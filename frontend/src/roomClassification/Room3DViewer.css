@@ -1,0 +1,197 @@
+.room3DModal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.76);
+  backdrop-filter: blur(12px);
+}
+
+.room3DDialog {
+  display: flex;
+  flex-direction: column;
+  width: min(1120px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow:
+    0 34px 90px rgba(15, 23, 42, 0.34),
+    0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.room3DHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f8fafc 100%
+    );
+}
+
+.room3DHeader p {
+  margin: 0 0 5px;
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.room3DHeader h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  line-height: 1.2;
+}
+
+.room3DHeader span {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.room3DCloseButton {
+  display: grid;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #dbe3ee;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.85rem;
+  line-height: 1;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.room3DCloseButton:hover {
+  border-color: #93c5fd;
+  color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.room3DCloseButton:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.28);
+  outline-offset: 2px;
+}
+
+.room3DCanvas {
+  width: 100%;
+  height: min(68vh, 720px);
+  min-height: 430px;
+  background: #eef3f8;
+}
+
+.room3DCanvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+.room3DFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 13px 20px;
+  border-top: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.room3DFooter span {
+  position: relative;
+}
+
+.room3DFooter span:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.room3DError {
+  width: min(380px, 72vw);
+  padding: 18px 20px;
+  border: 1px solid #fecaca;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+  color: #475569;
+  text-align: center;
+}
+
+.room3DError strong,
+.room3DError span {
+  display: block;
+}
+
+.room3DError strong {
+  margin-bottom: 7px;
+  color: #b91c1c;
+}
+
+.room3DError span {
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 700px) {
+  .room3DModal {
+    padding: 10px;
+  }
+
+  .room3DDialog {
+    max-height: calc(100vh - 20px);
+    border-radius: 18px;
+  }
+
+  .room3DHeader {
+    padding: 16px;
+  }
+
+  .room3DHeader span {
+    display: none;
+  }
+
+  .room3DCanvas {
+    height: 70vh;
+    min-height: 360px;
+  }
+
+  .room3DFooter {
+    gap: 12px;
+    padding: 11px 12px;
+    font-size: 0.7rem;
+  }
+
+  .room3DFooter span:not(:last-child)::after {
+    display: none;
+  }
+}
+
